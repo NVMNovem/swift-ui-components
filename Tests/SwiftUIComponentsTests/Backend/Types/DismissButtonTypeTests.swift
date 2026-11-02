@@ -21,7 +21,7 @@ struct DismissButtonTypeTests {
     func localizationIsBundled(language: String) throws {
         let expectedTranslations = [
             "en": ["Cancel": "Cancel", "Close": "Close", "Done": "Done", "Save": "Save"],
-            "nl": ["Cancel": "Annuleren", "Close": "Sluiten", "Done": "Gereed", "Save": "Opslaan"],
+            "nl": ["Cancel": "Annuleren", "Close": "Sluiten", "Done": "Gereed", "Save": "Bewaar"],
             "fr": ["Cancel": "Annuler", "Close": "Fermer", "Done": "Terminé", "Save": "Enregistrer"],
             "de": ["Cancel": "Abbrechen", "Close": "Schließen", "Done": "Fertig", "Save": "Sichern"],
         ]
