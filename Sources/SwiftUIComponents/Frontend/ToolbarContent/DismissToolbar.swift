@@ -90,7 +90,7 @@ public struct DismissToolbar: ToolbarContent {
         #endif
     }
     
-    private func buttonAction() {
+    func buttonAction() {
         if let action {
             action()
         } else {
