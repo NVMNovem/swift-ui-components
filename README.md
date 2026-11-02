@@ -10,32 +10,6 @@ with localized labels and platform-specific presentation.
 - iOS 15+, macOS 12+, tvOS 15+, watchOS 8+, or visionOS 1+.
 - Xcode with the SDK for your target platform.
 
-## Installation
-
-In Xcode, choose **File > Add Package Dependencies** and enter:
-
-```text
-https://github.com/NVMNovem/swift-ui-components.git
-```
-
-Select the `main` branch to use the current code, then add the
-`SwiftUIComponents` product to your app target.
-
-For another Swift package, add this dependency to `Package.swift`:
-
-```swift
-.package(
-    url: "https://github.com/NVMNovem/swift-ui-components.git",
-    branch: "main"
-)
-```
-
-Add the product to the consuming target's dependencies:
-
-```swift
-.product(name: "SwiftUIComponents", package: "swift-ui-components")
-```
-
 ## Usage
 
 ### Dismiss a presentation
@@ -105,20 +79,6 @@ Edit translations or add languages in
 [DismissToolbar.xcstrings](Sources/SwiftUIComponents/Resources/Frontend/ToolbarContent/DismissToolbar.xcstrings).
 In Xcode's string catalog editor, use the **+** button in the language sidebar
 to add a language, then enter its translations.
-
-## Project structure
-
-Source code lives under `Sources/SwiftUIComponents/`, grouped into `Backend/`
-and `Frontend/`. Localization catalogs under `Resources/` mirror the owning
-component's folder path. For example:
-
-```text
-Frontend/ToolbarContent/DismissToolbar.swift
-Resources/Frontend/ToolbarContent/DismissToolbar.xcstrings
-```
-
-Tests live under `Tests/SwiftUIComponentsTests/`, mirror the source folder
-tree, and append `Tests` to the corresponding source filename.
 
 ## Testing
 
