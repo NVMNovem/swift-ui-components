@@ -62,8 +62,7 @@ public struct DismissToolbar: ToolbarContent {
                     }
                     .labelStyle(.titleOnly)
                 }
-                .tint(Color.accentColor)
-                .buttonStyle(.borderedProminent)
+                .keyboardShortcut(.defaultAction)
             case .save:
                 Button {
                     buttonAction()
