@@ -5,13 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "swift-ui-components",
+    defaultLocalization: "en",
     platforms: [.iOS(.v15), .macOS(.v12), .tvOS(.v15), .watchOS(.v8), .visionOS(.v1)],
     products: [
         .library(name: "SwiftUIComponents", targets: ["SwiftUIComponents"]),
     ],
     targets: [
         .target(
-            name: "SwiftUIComponents"
+            name: "SwiftUIComponents",
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "SwiftUIComponentsTests",
